@@ -220,6 +220,33 @@ button {
   border-top: 1px solid var(--ink);
   padding: 16px 0 160px;
 }
+.experience {
+  padding-bottom: 120px;
+}
+.career-list {
+  margin-top: 55px;
+}
+.career-list article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  padding: 28px 0 55px;
+  border-top: 1px solid var(--line);
+}
+.career-list h2 {
+  font-size: clamp(28px, 3.2vw, 48px);
+  line-height: 1.1;
+}
+.career-period,
+.career-role {
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: .05em;
+}
+.career-list article > div:last-child {
+  line-height: 1.8;
+  color: #595956;
+}
 .about-grid {
   display: grid;
   grid-template-columns: 1.3fr 0.7fr;
@@ -310,6 +337,15 @@ footer {
 }
 .modal-description {
   color: #aaa;
+  line-height: 1.7;
+  max-width: 720px;
+}
+.modal-link {
+  display: inline-block;
+  margin-top: 12px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #777;
+  font-size: 11px;
 }
 .modal-close {
   position: absolute;
@@ -419,6 +455,10 @@ footer {
     grid-template-columns: 1fr;
     gap: 45px;
     margin-top: 45px;
+  }
+  .career-list article {
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
   .contact-link {
     margin-bottom: 100px;
